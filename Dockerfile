@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 RUN apt update &&\
     DEBIAN_FRONTEND=nointeractive \
     apt install --no-install-recommends --no-install-suggests -y -qq\
-    sudo less openssh-server emacs vim ruby ant make git python3 pip gosu gcc python3-dev patch
+    sudo less openssh-server emacs vim ruby ant make git python3 pip gosu gcc g++ python3-dev patch
 
 RUN DEBIAN_FRONTEND=nointeractive \
     apt install --no-install-recommends --no-install-suggests -y -qq\
