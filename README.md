@@ -33,3 +33,10 @@ echo "int main(){return 0;}" > main.c
 mbed export -m F64K -i make_gcc_arm
 make
 ```
+
+### 5. コンテナの終了
+
+このディレクトリで
+```
+docker-compose down
+```
