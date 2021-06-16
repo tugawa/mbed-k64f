@@ -1,0 +1,17 @@
+version: '3'
+services:
+  ejsbuild-k64f:
+    build:
+      context: .
+      args:
+        - LOCAL_USER=${LOCAL_USER}
+        - LOCAL_UID=${LOCAL_UID}
+        - LOCAL_GID=${LOCAL_GID}
+    ports:
+      - "2422:22"
+    volumes:
+      - "./home:/home/${LOCAL_USER}"
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp=unconfined

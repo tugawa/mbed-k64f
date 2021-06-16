@@ -1,0 +1,10 @@
+--- inttypes.h	2021-06-16 07:53:52.679654762 +0000
++++ /usr/include/newlib/inttypes.h	2021-06-16 07:54:24.014802582 +0000
+@@ -20,6 +20,7 @@
+ #include <stdint.h>
+ #define __need_wchar_t
+ #include <stddef.h>
++#include <sys/types.h>
+ 
+ #if __BSD_VISIBLE
+ #include <sys/_locale.h>
